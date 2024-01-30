@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap");
+
+body {
+    font-family: "Sixtyfour", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dcfffe;
+}
+
+h1 {
+    margin: 40px;
+}
+
+.container {
+    height: 600px;
+    width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container .actions {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container .actions button {
+    height: 80px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Sixtyfour", sans-serif;
+    border: none;
+    background-color: rgba(39, 39, 39, 0.706);
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+}
+
+.container .actions button i {
+    font-size: 40px;
+}
+
+#water {
+    color: rgb(76, 142, 255);
+}
+
+#fire {
+    color: red;
+}
+
+#plant {
+    color: rgb(2, 184, 2);
+}
+
+.container .dials {
+    background-color: rgba(39, 39, 39, 0.706);
+    width: 90%;
+    height: 300px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.container .dials p {
+    font-size: 13px;
+}
+
+.container .scores {
+    display: flex;
+}
+
+.container .scores div {
+    width: 180px;
+    display: flex;
+}
+
+.container .scores .computer {
+    display: flex;
+    justify-content: flex-end;
+}
