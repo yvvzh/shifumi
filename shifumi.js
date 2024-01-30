@@ -63,30 +63,46 @@ function computerPick() {
 
 function hadjime(playerPick, cpuPick) {
     let result;
-    if (playerPick === "WATER") {
-        if (cpuPick === "WATER") {
-            result = "DRAW";
-        } else if (cpuPick === "FIRE") {
-            result = "WIN";
-        } else if (cpuPick === "PLANT") {
-            result = "LOSE";
-        }
-    } else if (playerPick === "FIRE") {
-        if (cpuPick === "WATER") {
-            result = "LOSE";
-        } else if (cpuPick === "FIRE") {
-            result = "DRAW";
-        } else if (cpuPick === "PLANT") {
-            result = "WIN";
-        }
-    } else if (playerPick === "PLANT") {
-        if (cpuPick === "WATER") {
-            result = "WIN";
-        } else if (cpuPick === "FIRE") {
-            result = "LOSE";
-        } else if (cpuPick === "PLANT") {
-            result = "DRAW";
-        }
+    switch (playerPick) {
+        case "WATER":
+            switch (cpuPick) {
+                case "WATER":
+                    result = "DRAW";
+                    break;
+                case "FIRE":
+                    result = "WIN";
+                    break;
+                case "PLANT":
+                    result = "LOSE";
+                    break;
+            }
+            break;
+        case "FIRE":
+            switch (cpuPick) {
+                case "WATER":
+                    result = "LOSE";
+                    break;
+                case "FIRE":
+                    result = "DRAW";
+                    break;
+                case "PLANT":
+                    result = "WIN";
+                    break;
+            }
+            break;
+        case "PLANT":
+            switch (cpuPick) {
+                case "WATER":
+                    result = "WIN";
+                    break;
+                case "FIRE":
+                    result = "LOSE";
+                    break;
+                case "PLANT":
+                    result = "DRAW";
+                    break;
+            }
+            break;
     }
     return result;
 }
